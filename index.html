@@ -9,6 +9,14 @@ body {
 canvas {
   display: block;
   vertical-align: bottom;
+  background-image: url("./logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+#banner{
+
 }
 
 /* ---- particles.js container ---- */
@@ -24,9 +32,14 @@ canvas {
   background-position: 50% 50%;
 }
 
+#logo{
+  position: absolute;
+}
+
 </style>
 
 <div id="particles-js">
+  <!-- <img id="logo" src="./logo.png" /> -->
 </div>
 
 <script src="./particles.js-master/particles.js"></script>
@@ -36,26 +49,26 @@ canvas {
 particlesJS("particles-js", {
   "particles": {
     "number": {
-      "value": 50,
+      "value": 230,
       "density": {
         "enable": true,
         "value_area": 800
       }
     },
     "color": {
-      "value": "#deff00"
+      "value": "#ecebec"
     },
     "shape": {
-      "type": "image",
+      "type": "circle",
       "stroke": {
         "width": 0,
         "color": "#000000"
       },
       "polygon": {
-        "nb_sides": 5
+        "nb_sides": 3
       },
       "image": {
-        "src": "./star_2.png",
+        "src": "img/github.svg",
         "width": 100,
         "height": 100
       }
@@ -71,12 +84,12 @@ particlesJS("particles-js", {
       }
     },
     "size": {
-      "value": 45,
+      "value": 4,
       "random": true,
       "anim": {
-        "enable": false,
-        "speed": 40,
-        "size_min": 5,
+        "enable": true,
+        "speed": 20,
+        "size_min": 0.1,
         "sync": false
       }
     },
@@ -84,13 +97,13 @@ particlesJS("particles-js", {
       "enable": true,
       "distance": 150,
       "color": "#ecebec",
-      "opacity": 0,
+      "opacity": 0.2,
       "width": 1
     },
     "move": {
       "enable": true,
-      "speed": 6,
-      "direction": "bottom-left",
+      "speed": 2,
+      "direction": "bottom",
       "random": false,
       "straight": false,
       "out_mode": "out",
@@ -117,7 +130,7 @@ particlesJS("particles-js", {
     },
     "modes": {
       "grab": {
-        "distance": 0,
+        "distance": 121.63773040213432,
         "line_linked": {
           "opacity": 1
         }
