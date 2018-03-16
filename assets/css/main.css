@@ -1911,18 +1911,18 @@
 		}
 
 		header.major {
-			border-bottom-width: 1px;
+			/* border-bottom-width: 1px; */
 			border-color: rgba(224, 224, 224, 0.75);
 			border-style: solid;
-			border-top-width: 1px;
+			/* border-top-width: 1px; */
 			margin-bottom: 6em;
-			padding: 4em 0;
+			/* padding: 4em 0; */
 			position: relative;
 		}
 
 			header.major:before, header.major:after {
 				background: rgba(224, 224, 224, 0.75);
-				content: '';
+				/* content: ''; */
 				display: block;
 				height: 1px;
 				left: 0;
@@ -1940,6 +1940,12 @@
 
 			header.major h2 {
 				margin: 0;
+				background-image: -webkit-gradient(linear,left top,right top,color-stop(0,#2B2E4A),color-stop(.25,#E84545),color-stop(.5,#903749),color-stop(.75,#53354A));
+				border-radius: 200px;
+				box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.4);
+				color: white;
+				padding: 1em 0em;
+
 			}
 
 			header.major p {
