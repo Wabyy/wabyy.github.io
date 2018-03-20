@@ -55,6 +55,18 @@
 		    padding: 1em 0em;
 			}
 
+			.left-content{
+				float: left;
+			}
+
+			.right-content{
+				float: right;
+			}
+
+			.justify-text{
+				text-align: justify;
+			}
+
 			.banner-header{
 				display: flex;
 				flex-wrap: wrap;
@@ -86,6 +98,15 @@
 
 			.banner_desc{
 				font-size: 1em;
+			}
+
+			.about-container{
+				overflow: auto;
+				overflow-y:hidden;
+				overflow-x: hidden;
+				background-image: url("images/rocketbig.png");
+				background-position: center;
+				background-size: 100%;
 			}
 
 		</style>
@@ -140,7 +161,29 @@
 				</div>
 				</header>
 
+				<div class="container 100% about-container" >
+					<div class="container 25% left-content">
+						<h2 class="about-title">Sobre nosotros</h2>
+						<p class="container 25% left-content justify-text">
+							El equipo de Wabyy está formado por especialistas con grandes proyectos a sus espaldas y años de experiencia.
+							Mejoramos el tráfico de su web, hacemos su web más fácil de encontrar, así como más fácil de utilizar y entender. Enfocamos nuestro trabajo a la simpleza, calidad, rapidez e innovación.
+							Actualmente ofrecemos nuestros servicios en Madrid, Barcelona y Andalucía.
+						</p>
+					</div>
+
+					<div class="container 25% right-content">
+						<h2 class="about-title">Nuestra visión</h2>
+						<p class="container 25% right-content justify-text">
+							Hoy en día la tecnología está avanzando a pasos agigantados, y los años pasan y la web de tu negocio queda obsoleta.
+							En Wabyy nos aseguramos de que su web cuente con la última tecnología técnica y visual, porque "una visita podría ser un cliente"
+							y cuando a un visitante no le resulta cómodo el servicio web o el aspecto no le es agradable ese visitante se transforma en un cliente, pero de tu competencia.
+						</p>
+					</div>
+
+				</div>
+
 			</div>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -151,30 +194,44 @@
 			<script src="./particles.js-master/particles.js"></script>
 			<script src="assets\js\jquery.lettering-0.6.1.min.js"></script>
 			<script src="assets\js\jquery.textillate.js"></script>
-			<!-- <script src="http://jschr.github.io/textillate/jquery.textillate.js"></script> -->
 			<script>
 
 
-			window.onscroll = function() {myFunction()};
-
-			function myFunction() {
-				var numAnim_1 = new CountUp("target_1", 0.0, 174, 0, 3);
-				if (!numAnim_1.error) {
-				    numAnim_1.start();
-				}
-				var numAnim_2 = new CountUp("target_2", 0.0, 100, 0, 4);
-				if (!numAnim_2.error) {
-				    numAnim_2.start();
-				}
-				var numAnim_3 = new CountUp("target_3", 0.0, 3, 0, 3);
-				if (!numAnim_3.error) {
-				    numAnim_3.start();
-				}
-				var numAnim_4 = new CountUp("target_4", 0.0, 100, 0, 3.5);
-				if (!numAnim_4.error) {
-				    numAnim_4.start();
+			window.onscroll = function() {animate_numbers()};
+			var scrolled = false;
+			function animate_numbers() {
+				console.log($(document).scrollTop());
+				if($(document).scrollTop()>200 && !scrolled){
+					var numAnim_1 = new CountUp("target_1", 0.0, 174, 0, 3);
+					if (!numAnim_1.error) {
+					    numAnim_1.start();
+							scrolled=true;
+					}
+					var numAnim_2 = new CountUp("target_2", 0.0, 100, 0, 4);
+					if (!numAnim_2.error) {
+					    numAnim_2.start();
+							scrolled=true;
+					}
+					var numAnim_3 = new CountUp("target_3", 0.0, 3, 0, 3);
+					if (!numAnim_3.error) {
+					    numAnim_3.start();
+							scrolled=true;
+					}
+					var numAnim_4 = new CountUp("target_4", 0.0, 100, 0, 3.5);
+					if (!numAnim_4.error) {
+					    numAnim_4.start();
+							scrolled=true;
+					}
 				}
 			}
+
+			$(document).scroll(function() {
+				if($(document).scrollTop()>500){
+					$(".about-title").addClass("animated fadeInUp");
+					$(".left-content").addClass("animated fadeInLeft");
+					$(".right-content").addClass("animated fadeInRight");
+				}
+			});
 
 			$(function () {
 				$('.animate-text').textillate({
