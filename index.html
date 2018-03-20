@@ -10,6 +10,8 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 		<script src="assets/js/jquery.lettering-0.6.1.min.js"></script>
 		<script src="assets/js/jquery.textillate.js"></script>
+		<script src="assets/js/countUp.js"></script>
+
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -38,6 +40,24 @@
 				background-position: center;
 				background-repeat: no-repeat;
 				height: 60%;
+				max-height: 1080px;
+			}
+
+			.major{
+				margin: 0;
+		    margin-left: 1%;
+		    margin-right: 1%;
+		    margin-top: 2em;
+		    background-image: -webkit-gradient(linear,left top,right top,color-stop(0,#2B2E4A),color-stop(.25,#E84545),color-stop(.5,#903749),color-stop(.75,#53354A));
+		    border-radius: 200px;
+		    box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.4);
+		    color: white;
+		    padding: 1em 0em;
+			}
+
+			.banner-header{
+				display: flex;
+				flex-wrap: wrap;
 			}
 
 			@media screen and (max-width: 736px) {
@@ -48,6 +68,24 @@
 
 			.hiper-bold{
 				text-decoration: underline;
+			}
+
+			.col_banner_home {
+		    flex: 0 0 25%;
+		    max-width: 25%;
+			}
+
+			.banner_title, .banner_desc{
+				color: #fff;
+			}
+
+			.banner_title{
+				font-size: 1.5em;
+				margin-bottom: 10px;
+			}
+
+			.banner_desc{
+				font-size: 1em;
 			}
 
 		</style>
@@ -65,7 +103,6 @@
 				<br />
 				<br />
 				<br />
-
 			</div>
 
 		<!-- Main -->
@@ -74,14 +111,35 @@
 				<h2 id="slogan-title" class="animate-text">
 					Porque una visita puede ser un cliente
 				</h2>
-				<br /><br />
+				<br />
+				<br />
 
 				<header class="major 100%">
-					<h2>
-					Lorem ipsum dolor sit amet, consectetur <br />
-					adipisicing elit, sed do eiusmod tempor</h2>
+				<div class="banner-header">
+					<div class="col_banner_home">
+						<img width="15%" class="25%" src="images/moon.svg" />
 
+						<h1 id='target_1' class="banner_title">174</h1>
+						<h3 class="banner_desc">Proyectos completados</h3>
+					</div>
+					<div class="col_banner_home">
+						<img width="15%" class="25%" src="images/jupiter.svg" />
+						<h1 class="banner_title"><span id='target_2'>100</span>%</h1>
+						<h3 class="banner_desc">Satisfacción garantizada</h3>
+					</div>
+					<div class="col_banner_home">
+						<img width="15%" class="25%" src="images/planet-earth.svg" />
+						<h1 id='target_3' class="banner_title">3</h1>
+						<h3 class="banner_desc">Delegaciones en España</h3>
+					</div>
+					<div class="col_banner_home">
+						<img width="15%" class="25%" src="images/uranus.svg" />
+						<h1 class="banner_title"><span id='target_4'>100</span>%</h1>
+						<h3 class="banner_desc">Diseño personalizado</h3>
+					</div>
+				</div>
 				</header>
+
 			</div>
 
 		<!-- Scripts -->
@@ -95,6 +153,28 @@
 			<script src="assets\js\jquery.textillate.js"></script>
 			<!-- <script src="http://jschr.github.io/textillate/jquery.textillate.js"></script> -->
 			<script>
+
+
+			window.onscroll = function() {myFunction()};
+
+			function myFunction() {
+				var numAnim_1 = new CountUp("target_1", 0.0, 174, 0, 3);
+				if (!numAnim_1.error) {
+				    numAnim_1.start();
+				}
+				var numAnim_2 = new CountUp("target_2", 0.0, 100, 0, 4);
+				if (!numAnim_2.error) {
+				    numAnim_2.start();
+				}
+				var numAnim_3 = new CountUp("target_3", 0.0, 3, 0, 3);
+				if (!numAnim_3.error) {
+				    numAnim_3.start();
+				}
+				var numAnim_4 = new CountUp("target_4", 0.0, 100, 0, 3.5);
+				if (!numAnim_4.error) {
+				    numAnim_4.start();
+				}
+			}
 
 			$(function () {
 				$('.animate-text').textillate({

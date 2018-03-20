@@ -1948,7 +1948,6 @@
 				box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.4);
 				color: white;
 				padding: 1em 0em;
-
 			}
 
 			header.major p {
@@ -2738,7 +2737,7 @@
 
 		#main header.major,
 		#main footer.major {
-			background: #ffffff;
+			/* background: #ffffff; */
 		}
 
 /* Wide */
