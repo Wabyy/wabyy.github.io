@@ -5,7 +5,11 @@
 		<title>wabyy</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
+		<link rel="shortcut icon" type="image/png" href="./favicon.png"/>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+		<script src="assets/js/jquery.lettering-0.6.1.min.js"></script>
+		<script src="assets/js/jquery.textillate.js"></script>
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -21,24 +25,29 @@
 			  background-position: center;
 			  background-repeat: no-repeat;
 			  max-height: 1080px;
-				border-bottom-left-radius: 40% 40%;
-			  border-bottom-right-radius: 40% 40%;
+				border-bottom-left-radius: 100%;
+			  border-bottom-right-radius: 100%;
 				box-shadow: inset 0px -10px 19px 0px rgba(0,0,0,0.4);
 			}
 
 			#header{
-				border-bottom-left-radius: 40% 40%;
-			  border-bottom-right-radius: 40% 40%;
+				border-bottom-left-radius: 100%;
+			  border-bottom-right-radius: 100%;
 				background-image: url("./logo_rocket.png");
 				background-size: 1000px 500px;
 				background-position: center;
 				background-repeat: no-repeat;
+				height: 60%;
 			}
 
 			@media screen and (max-width: 736px) {
 				#header{
 					background-size: 189px 117px;
 				}
+			}
+
+			.hiper-bold{
+				text-decoration: underline;
 			}
 
 		</style>
@@ -61,10 +70,12 @@
 
 		<!-- Main -->
 			<div id="main">
+				<br />
+				<h2 id="slogan-title" class="animate-text">
+					Porque una visita puede ser un cliente
+				</h2>
+				<br /><br />
 
-				<h2>
-					 <br />
-					Porque una visita podria ser un cliente</h2><br /><br />
 				<header class="major 100%">
 					<h2>
 					Lorem ipsum dolor sit amet, consectetur <br />
@@ -80,9 +91,19 @@
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 			<script src="./particles.js-master/particles.js"></script>
+			<script src="assets\js\jquery.lettering-0.6.1.min.js"></script>
+			<script src="http://jschr.github.io/textillate/jquery.textillate.js"></script>
 			<script>
 
-			particlesJS("particles-js", {
+			$(function () {
+				$('.animate-text').textillate({
+					loop: true,
+				  in: { effect: 'fadeInLeft', delay:30},
+					out:{ effect: ''}
+				});
+			});
+
+				particlesJS("particles-js", {
 			  "particles": {
 			    "number": {
 			      "value": 70,

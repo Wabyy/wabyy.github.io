@@ -1942,6 +1942,7 @@
 				margin: 0;
 				margin-left: 1%;
 				margin-right: 1%;
+				margin-top: 2em;
 				background-image: -webkit-gradient(linear,left top,right top,color-stop(0,#2B2E4A),color-stop(.25,#E84545),color-stop(.5,#903749),color-stop(.75,#53354A));
 				border-radius: 200px;
 				box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.4);
@@ -2719,7 +2720,7 @@
 /* Main */
 
 	#main {
-		padding: 6em 0 5em 0;
+		padding: 4em 0 5em 0;
 		position: relative;
 		z-index: 1;
 	}
