@@ -55,14 +55,6 @@
 		    padding: 1em 0em;
 			}
 
-			.left-content{
-				float: left;
-			}
-
-			.right-content{
-				float: right;
-			}
-
 			.justify-text{
 				text-align: justify;
 			}
@@ -70,6 +62,14 @@
 			.banner-header{
 				display: flex;
 				flex-wrap: wrap;
+				width: 1700px;
+				margin: 0 auto;
+			}
+
+			@media screen and (max-width: 1700px) {
+				.banner-header{
+					width: 100%;
+				}
 			}
 
 			@media screen and (max-width: 736px) {
@@ -100,12 +100,24 @@
 				font-size: 1em;
 			}
 
+			.col_about{
+				flex: 0 0 30%;
+		    max-width: 30%;
+				text-align: center;
+			}
+
+			.col_rocket{
+				flex: 0 0 20%;
+		    max-width: 20%;
+			}
+
+			.center-content{
+				height:30%;
+			}
+
 			.about-container{
-				overflow: auto;
 				overflow-y:hidden;
 				overflow-x: hidden;
-				background-image: url("images/rocketbig.png");
-				background-position: center;
 				background-size: 100%;
 			}
 
@@ -138,42 +150,48 @@
 				<header class="major 100%">
 				<div class="banner-header">
 					<div class="col_banner_home">
-						<img width="15%" class="25%" src="images/moon.svg" />
-
+						<img width="80px" class="25%" src="images/moon.svg" />
 						<h1 id='target_1' class="banner_title">174</h1>
 						<h3 class="banner_desc">Proyectos completados</h3>
 					</div>
+
 					<div class="col_banner_home">
-						<img width="15%" class="25%" src="images/jupiter.svg" />
+						<img width="80px" class="25%" src="images/jupiter.svg" />
 						<h1 class="banner_title"><span id='target_2'>100</span>%</h1>
 						<h3 class="banner_desc">Satisfacción garantizada</h3>
 					</div>
 					<div class="col_banner_home">
-						<img width="15%" class="25%" src="images/planet-earth.svg" />
+						<img width="80px" class="25%" src="images/planet-earth.svg" />
 						<h1 id='target_3' class="banner_title">3</h1>
 						<h3 class="banner_desc">Delegaciones en España</h3>
 					</div>
 					<div class="col_banner_home">
-						<img width="15%" class="25%" src="images/uranus.svg" />
+						<img width="80px" class="25%" src="images/uranus.svg" />
 						<h1 class="banner_title"><span id='target_4'>100</span>%</h1>
 						<h3 class="banner_desc">Diseño personalizado</h3>
 					</div>
 				</div>
 				</header>
 
-				<div class="container 100% about-container" >
-					<div class="container 25% left-content">
+				<div class="container 100% about-container banner-header" >
+
+					<div class="col_about">
 						<h2 class="about-title">Sobre nosotros</h2>
-						<p class="container 25% left-content justify-text">
+						<p class="left-content justify-text">
 							El equipo de Wabyy está formado por especialistas con grandes proyectos a sus espaldas y años de experiencia.
 							Mejoramos el tráfico de su web, hacemos su web más fácil de encontrar, así como más fácil de utilizar y entender. Enfocamos nuestro trabajo a la simpleza, calidad, rapidez e innovación.
 							Actualmente ofrecemos nuestros servicios en Madrid, Barcelona y Andalucía.
 						</p>
 					</div>
 
-					<div class="container 25% right-content">
+					<div class="col_about">
+						<img class="center-content" src="images/rocketbig.png" />
+					</div>
+
+
+					<div class="col_about">
 						<h2 class="about-title">Nuestra visión</h2>
-						<p class="container 25% right-content justify-text">
+						<p class="right-content justify-text">
 							Hoy en día la tecnología está avanzando a pasos agigantados, y los años pasan y la web de tu negocio queda obsoleta.
 							En Wabyy nos aseguramos de que su web cuente con la última tecnología técnica y visual, porque "una visita podría ser un cliente"
 							y cuando a un visitante no le resulta cómodo el servicio web o el aspecto no le es agradable ese visitante se transforma en un cliente, pero de tu competencia.
@@ -227,9 +245,10 @@
 
 			$(document).scroll(function() {
 				if($(document).scrollTop()>500){
-					$(".about-title").addClass("animated fadeInUp");
+					$(".about-title").addClass("animated fadeInDown");
 					$(".left-content").addClass("animated fadeInLeft");
 					$(".right-content").addClass("animated fadeInRight");
+					$(".center-content").addClass("animated fadeInUp");
 				}
 			});
 
