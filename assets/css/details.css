@@ -50,7 +50,7 @@
 
 			#slogan-title{
 				font-family: 'Hind Siliguri', sans-serif;
-				text-transform: inherit;
+				/* text-transform: inherit; */
 			}
 
 			@media screen and (max-width: 1700px) {
