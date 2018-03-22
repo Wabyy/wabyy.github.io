@@ -17,7 +17,7 @@
 			#header{
 				border-bottom-left-radius: 100%;
 			  border-bottom-right-radius: 100%;
-				background-image: url("../../images/logo_rocket.png");
+				background-image: url("../../images/logo_v2.png");
 				background-size: 1000px 500px;
 				background-position: center;
 				background-repeat: no-repeat;
@@ -46,6 +46,11 @@
 				flex-wrap: wrap;
 				width: 1700px;
 				margin: 0 auto;
+			}
+
+			#slogan-title{
+				font-family: 'Hind Siliguri', sans-serif;
+				text-transform: inherit;
 			}
 
 			@media screen and (max-width: 1700px) {
@@ -113,7 +118,7 @@
 
 			@media screen and (max-width: 736px) {
 				#header{
-					background-size: 85%;
+					background-size: 100%;
 				}
 
 				.col_banner_home {
