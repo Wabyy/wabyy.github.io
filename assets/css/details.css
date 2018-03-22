@@ -103,6 +103,14 @@
 				visibility: hidden;
 			}
 
+			@media screen and (max-width: 1700px) {
+				.col_about{
+					flex: 0 0 30%;
+			    max-width: 30%;
+			    margin: 0 auto;
+				}
+			}
+
 			@media screen and (max-width: 736px) {
 				#header{
 					background-size: 85%;
@@ -125,6 +133,6 @@
 				}
 
 				.center-content{
-					padding-bottom: 1em;
+					paddgi-bottom: 1em;
 				}
 			}
