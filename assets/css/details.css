@@ -54,12 +54,6 @@
 				}
 			}
 
-			@media screen and (max-width: 736px) {
-				#header{
-					background-size: 189px 117px;
-				}
-			}
-
 			.hiper-bold{
 				text-decoration: underline;
 			}
@@ -107,4 +101,30 @@
 				overflow-y:hidden;
 				overflow-x: hidden;
 				visibility: hidden;
+			}
+
+			@media screen and (max-width: 736px) {
+				#header{
+					background-size: 85%;
+				}
+
+				.col_banner_home {
+			    flex: 0 0 50%;
+			    max-width: 50%;
+				}
+
+				.major{
+					border-radius: 100px;
+					margin-top: 0em;
+				}
+
+				.col_about{
+					flex: 0 0 100%;
+			    max-width: 100%;
+					text-align: center;
+				}
+
+				.center-content{
+					padding-bottom: 1em;
+				}
 			}
