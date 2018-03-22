@@ -55,10 +55,8 @@ $('.about-container').waypoint(function() {
 }, { offset: '65%' })
 
 var scrolled = false;
-if(!scrolled){
 	$('.major').waypoint(function() {
-		console.log($(document).scrollTop());
-		if($(document).scrollTop()>200 && !scrolled){
+		if(!scrolled){
 			var numAnim_1 = new CountUp("target_1", 0.0, 174, 0, 3);
 			if (!numAnim_1.error) {
 					numAnim_1.start();
@@ -81,4 +79,3 @@ if(!scrolled){
 			}
 		}
 	}, { offset: '65%' })
-}
