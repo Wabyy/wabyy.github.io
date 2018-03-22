@@ -37,6 +37,7 @@
 
 })(jQuery);
 
+
 $(function () {
 	$('.animate-text').textillate({
 		loop: true,
@@ -53,29 +54,31 @@ $('.about-container').waypoint(function() {
   setTimeout(function(){$(".center-content").addClass("animated fadeInUp")},0);
 }, { offset: '65%' })
 
-$('.major').waypoint(function() {
-	var scrolled = false;
-	console.log($(document).scrollTop());
-	if($(document).scrollTop()>200 && !scrolled){
-		var numAnim_1 = new CountUp("target_1", 0.0, 174, 0, 3);
-		if (!numAnim_1.error) {
-				numAnim_1.start();
-				scrolled=true;
+var scrolled = false;
+if(!scrolled){
+	$('.major').waypoint(function() {
+		console.log($(document).scrollTop());
+		if($(document).scrollTop()>200 && !scrolled){
+			var numAnim_1 = new CountUp("target_1", 0.0, 174, 0, 3);
+			if (!numAnim_1.error) {
+					numAnim_1.start();
+					scrolled=true;
+			}
+			var numAnim_2 = new CountUp("target_2", 0.0, 100, 0, 4);
+			if (!numAnim_2.error) {
+					numAnim_2.start();
+					scrolled=true;
+			}
+			var numAnim_3 = new CountUp("target_3", 0.0, 3, 0, 3);
+			if (!numAnim_3.error) {
+					numAnim_3.start();
+					scrolled=true;
+			}
+			var numAnim_4 = new CountUp("target_4", 0.0, 100, 0, 3.5);
+			if (!numAnim_4.error) {
+					numAnim_4.start();
+					scrolled=true;
+			}
 		}
-		var numAnim_2 = new CountUp("target_2", 0.0, 100, 0, 4);
-		if (!numAnim_2.error) {
-				numAnim_2.start();
-				scrolled=true;
-		}
-		var numAnim_3 = new CountUp("target_3", 0.0, 3, 0, 3);
-		if (!numAnim_3.error) {
-				numAnim_3.start();
-				scrolled=true;
-		}
-		var numAnim_4 = new CountUp("target_4", 0.0, 100, 0, 3.5);
-		if (!numAnim_4.error) {
-				numAnim_4.start();
-				scrolled=true;
-		}
-	}
-}, { offset: '65%' })
+	}, { offset: '65%' })
+}
