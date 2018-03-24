@@ -91,16 +91,16 @@ $('.hidden-container-innovation').waypoint(function() {
 	setTimeout(function(){$("#first-anim-img").addClass("animated bounceInRight")},0);
 }, { offset: '45%' })
 
-// EFFICIENCY CONTENT ANIMATION
-$('.hidden-container-efficiency').waypoint(function() {
-  setTimeout(function(){$(".hidden-container-efficiency").css("visibility","visible")},0);
-	setTimeout(function(){$("#second-anim-text").addClass("animated bounceInRight")},0);
-	setTimeout(function(){$("#second-anim-img").addClass("animated bounceInLeft")},0);
-}, { offset: '45%' })
-//
 // RESPONSIVE CONTENT ANIMATION
 $('.hidden-container-responsive').waypoint(function() {
   setTimeout(function(){$(".hidden-container-responsive").css("visibility","visible")},0);
+	setTimeout(function(){$("#second-anim-text").addClass("animated bounceInRight")},0);
+	setTimeout(function(){$("#second-anim-img").addClass("animated bounceInLeft")},0);
+}, { offset: '45%' })
+
+// EFFICIENCY CONTENT ANIMATION
+$('.hidden-container-efficiency').waypoint(function() {
+  setTimeout(function(){$(".hidden-container-efficiency").css("visibility","visible")},0);
 	setTimeout(function(){$("#third-anim-text").addClass("animated bounceInLeft")},0);
 	setTimeout(function(){$("#third-anim-img").addClass("animated bounceInRight")},0);
 }, { offset: '45%' })
