@@ -177,6 +177,10 @@
 		padding-top: 12em;
 	}
 
+	.col_resume_text{
+		padding-top: 18%;
+	}
+
 	@media screen and (max-width: 1700px) {
 		.col_about{
 			flex: 0 0 30%;
@@ -187,10 +191,6 @@
 		.col_resume_img,.col_resume_text{
 			flex: 0 0 40%;
 	    max-width: 40%;
-		}
-
-		.col_resume_text{
-			padding-top: 18%;
 		}
 
 	}
@@ -242,4 +242,6 @@
 		.col_resume_img, .col_resume_text{
 			padding-top: 3em;
 		}
+
+
 	}
