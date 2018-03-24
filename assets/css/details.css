@@ -185,8 +185,12 @@
 		}
 
 		.col_resume_img,.col_resume_text{
-			flex: 0 0 30%;
-	    max-width: 30%;
+			flex: 0 0 40%;
+	    max-width: 40%;
+		}
+
+		.col_resume_text{
+			padding-top: 18%;
 		}
 
 	}
@@ -236,6 +240,6 @@
 		}
 
 		.col_resume_img, .col_resume_text{
-			padding-top: 6em;
+			padding-top: 3em;
 		}
 	}
