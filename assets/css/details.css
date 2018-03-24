@@ -171,15 +171,13 @@
 		flex: 0 0 40%;
 		max-width: 40%;
 		text-align: justify;
+		padding-top: 18% !important;
 	}
 
 	.col_resume_img, .col_resume_text{
 		padding-top: 12em;
 	}
 
-	.col_resume_text{
-		padding-top: 18%;
-	}
 
 	@media screen and (max-width: 1700px) {
 		.col_about{
