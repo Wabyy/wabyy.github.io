@@ -38,6 +38,7 @@
 })(jQuery);
 
 
+// SLOGAN FADE IN ANIMATION
 $(function () {
 	$('.animate-text').textillate({
 		loop: true,
@@ -46,14 +47,8 @@ $(function () {
 	});
 });
 
-$('.about-container').waypoint(function() {
-  setTimeout(function(){$(".about-container").css("visibility","visible")},0);
-  setTimeout(function(){$(".about-title").addClass("animated fadeInDown")},0);
-  setTimeout(function(){$(".left-content").addClass("animated fadeInLeft")},0);
-  setTimeout(function(){$(".right-content").addClass("animated fadeInRight")},0);
-  setTimeout(function(){$(".center-content").addClass("animated fadeInUp")},0);
-}, { offset: '65%' })
 
+// STATS UP ANIMATION
 var scrolled = false;
 	$('.major').waypoint(function() {
 		if(!scrolled){
@@ -79,3 +74,33 @@ var scrolled = false;
 			}
 		}
 	}, { offset: '65%' })
+
+// ABOUT US CONTENT ANIMATION
+$('.hidden-container-about').waypoint(function() {
+  setTimeout(function(){$(".hidden-container-about").css("visibility","visible")},0);
+  setTimeout(function(){$(".about-title").addClass("animated fadeInDown")},0);
+  setTimeout(function(){$(".left-content").addClass("animated fadeInLeft")},0);
+  setTimeout(function(){$(".right-content").addClass("animated fadeInRight")},0);
+  setTimeout(function(){$(".center-content").addClass("animated fadeInUp")},0);
+}, { offset: '65%' })
+
+// INNOVATION CONTENT ANIMATION
+$('.hidden-container-innovation').waypoint(function() {
+  setTimeout(function(){$(".hidden-container-innovation").css("visibility","visible")},0);
+	setTimeout(function(){$("#first-anim-text").addClass("animated bounceInLeft")},0);
+	setTimeout(function(){$("#first-anim-img").addClass("animated bounceInRight")},0);
+}, { offset: '45%' })
+
+// EFFICIENCY CONTENT ANIMATION
+$('.hidden-container-efficiency').waypoint(function() {
+  setTimeout(function(){$(".hidden-container-efficiency").css("visibility","visible")},0);
+	setTimeout(function(){$("#second-anim-text").addClass("animated bounceInRight")},0);
+	setTimeout(function(){$("#second-anim-img").addClass("animated bounceInLeft")},0);
+}, { offset: '45%' })
+//
+// RESPONSIVE CONTENT ANIMATION
+$('.hidden-container-responsive').waypoint(function() {
+  setTimeout(function(){$(".hidden-container-responsive").css("visibility","visible")},0);
+	setTimeout(function(){$("#third-anim-text").addClass("animated bounceInLeft")},0);
+	setTimeout(function(){$("#third-anim-img").addClass("animated bounceInRight")},0);
+}, { offset: '45%' })

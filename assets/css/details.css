@@ -41,7 +41,7 @@
 				text-align: justify;
 			}
 
-			.banner-header{
+			.flex-container{
 				display: flex;
 				flex-wrap: wrap;
 				width: 1700px;
@@ -54,7 +54,7 @@
 			}
 
 			@media screen and (max-width: 1700px) {
-				.banner-header{
+				.flex-container{
 					width: 100%;
 				}
 			}
@@ -102,10 +102,73 @@
 				margin: 0 auto;
 			}
 
-			.about-container{
+			.hidden-container-about,
+			.hidden-container-innovation,
+			.hidden-container-efficiency,
+			.hidden-container-responsive
+			{
 				overflow-y:hidden;
 				overflow-x: hidden;
 				visibility: hidden;
+			}
+
+			.resume-high-container{
+				justify-content: center;
+				width: 100%;
+				color: #fff;
+				padding-bottom: 5em;
+				background-color: #2B2E4A;
+			}
+
+			.resume-high-container h2{
+				color: #fff;
+			}
+
+			.resume-high-container::after{
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				height: 8vw;
+				pointer-events: none;
+				background: url("../../images/section-wave-white.svg") center top no-repeat;
+				background-size: 100% 100%;
+				transform: scaleY(-1);
+			}
+
+			.resume-low-container{
+				justify-content: center;
+				width: 100%;
+				margin-bottom: 6em;
+			}
+
+			.resume-low-container::before{
+				content: '';
+				position: absolute;
+				left: 0;
+				right: 0;
+				height: 8vw;
+				pointer-events: none;
+				background: url("../../images/section-wave-dark-blue.svg") center top no-repeat;
+				background-size: 100% 100%;
+				transform: scale(-1,-1);
+			}
+
+			.col_resume_img{
+				flex: 0 0 40%;
+		    max-width: 40%;
+				text-align: center;
+				height: 100%;
+			}
+
+			.col_resume_text{
+				flex: 0 0 40%;
+				max-width: 40%;
+				text-align: justify;
+			}
+
+			.col_resume_img, .col_resume_text{
+				padding-top: 12em;
 			}
 
 			@media screen and (max-width: 1700px) {
