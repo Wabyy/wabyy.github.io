@@ -183,9 +183,10 @@
 		padding-top: 12em;
 	}
 
-	.column{
+	.col_feature{
 		margin: 0 auto;
 		margin-top: 5em;
+		width: 33%;
 	}
 
 	.feature_item{
@@ -264,5 +265,15 @@
 
 		.col_resume_img, .col_resume_text{
 			padding-top: 3em;
+		}
+
+		.col_feature{
+			margin: 0 auto;
+			margin-top: 0;
+			width: 100%;
+		}
+
+		.feature_item{
+			margin-top: 50px;
 		}
 	}
