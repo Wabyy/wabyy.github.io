@@ -104,3 +104,16 @@ $('.hidden-container-efficiency').waypoint(function() {
 	setTimeout(function(){$("#third-anim-text").addClass("animated bounceInLeft")},0);
 	setTimeout(function(){$("#third-anim-img").addClass("animated bounceInRight")},0);
 }, { offset: '45%' })
+
+// FEATURED CONTENT ANIMATION
+$('.hidden-feature-container').waypoint(function() {
+  // setTimeout(function(){$(".hidden-feature-container").css("visibility","visible")},0);
+	setTimeout(function(){$(".first_feature_anim").css("visibility","visible")},500);
+	setTimeout(function(){$(".first_feature_anim").addClass("animated flipInX")},500);
+
+	setTimeout(function(){$(".second_feature_anim").css("visibility","visible")},1000);
+	setTimeout(function(){$(".second_feature_anim").addClass("animated flipInX")},1000);
+
+	setTimeout(function(){$(".third_feature_anim").css("visibility","visible")},1500);
+	setTimeout(function(){$(".third_feature_anim").addClass("animated flipInX")},1500);
+}, { offset: '25%' })

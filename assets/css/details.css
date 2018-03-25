@@ -116,6 +116,11 @@
 		visibility: hidden;
 	}
 
+	.hidden-feature-container{
+		overflow-y:hidden;
+		overflow-x: hidden;
+	}
+
 	.resume-high-container{
 		justify-content: center;
 		width: 100%;
@@ -176,6 +181,26 @@
 
 	.col_resume_img, .col_resume_text{
 		padding-top: 12em;
+	}
+
+	.column{
+		margin: 0 auto;
+		margin-top: 5em;
+	}
+
+	.feature_item{
+		margin-top: 100px;
+		visibility: hidden;
+		text-align: center;
+	}
+
+	.feature_item img{
+		text-align: center;
+	}
+
+
+	.feature_title{
+		letter-spacing: 0;
 	}
 
 
@@ -240,6 +265,4 @@
 		.col_resume_img, .col_resume_text{
 			padding-top: 3em;
 		}
-
-
 	}
