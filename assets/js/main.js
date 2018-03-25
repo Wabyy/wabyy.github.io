@@ -107,7 +107,6 @@ $('.hidden-container-efficiency').waypoint(function() {
 
 // FEATURED CONTENT ANIMATION
 $('.hidden-feature-container').waypoint(function() {
-  // setTimeout(function(){$(".hidden-feature-container").css("visibility","visible")},0);
 	setTimeout(function(){$(".first_feature_anim").css("visibility","visible")},500);
 	setTimeout(function(){$(".first_feature_anim").addClass("animated flipInX")},500);
 

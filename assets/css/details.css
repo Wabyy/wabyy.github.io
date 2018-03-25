@@ -1,6 +1,8 @@
 
 	#main{
 		overflow-x: hidden;
+		background-color: white;
+		margin-bottom: 140px;
 	}
 
 	canvas {
@@ -204,6 +206,24 @@
 		letter-spacing: 0;
 	}
 
+	#awesome-footer{
+		text-align: center;
+		height: 140px;
+		padding: 25px 0;
+		font-size: 85%;
+		background-color: #2A2A2A;
+		position: fixed;
+		z-index: -1;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	#awesome-footer h1{
+		color: white;
+		text-transform: lowercase;
+		letter-spacing: 0;
+	}
 
 	@media screen and (max-width: 1700px) {
 		.col_about{
