@@ -218,10 +218,9 @@
 		right: 0;
 		bottom: 0;
 		background-image: url("../../images/rocket_logo.png");
-		background-size: 5%;
+		background-size: contain;
 		background-repeat: no-repeat;
 		background-position: center;
-		background-position-y: 80%;
 	}
 
 	#awesome-footer h1{
