@@ -211,12 +211,17 @@
 		height: 140px;
 		padding: 25px 0;
 		font-size: 85%;
-		background-color: #2A2A2A;
+		background-color: #2B2E4A;
 		position: fixed;
 		z-index: -1;
 		left: 0;
 		right: 0;
 		bottom: 0;
+		background-image: url("../../images/rocket_logo.png");
+		background-size: 5%;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-position-y: 80%;
 	}
 
 	#awesome-footer h1{
